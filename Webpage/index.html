@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>California Real Estate</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+<link rel="icon" href="./images/house_icon.png">
+<style>
+
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-blue w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-blue" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="./index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="./process.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Setup/Tools</a>
+    <a href="./tableau.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Analyzing</a>
+    <a href="./r.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Testing</a>
+    <a href="./machine.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Predictions</a>
+    <a href="./summary.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Summary</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="./process.html" class="w3-bar-item w3-button w3-padding-large">Setup/Tools</a>
+    <a href="./tableau.html" class="w3-bar-item w3-button w3-padding-large">Analyzing</a>
+    <a href="./r.html" class="w3-bar-item w3-button w3-padding-large">Testing</a>
+    <a href="./machine.html" class="w3-bar-item w3-button w3-padding-large">Predictions</a>
+    <a href="./summary.html" class="w3-bar-item w3-button w3-padding-large">Summary</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-blue w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">Analyzing Housing Market Data</h1>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-container">
+  <div class="w3-content">
+      <h1>About</h1>
+      <h5 class="w3-padding-32">  We knew that we wanted to look into real estate data, but weren't exactly sure what. Of course, this came with
+        the problem of being too specific or too vague. Since we all live in California, we thought it would be interesting to analyze California 
+        specific housing market data. We quickly realized that finding good quality data is hard to come by. Upon looking for usable data, we were 
+        able to pull US real estate data directly from RedFin. Although we had a lot of information in this dataset, we wanted to compare it to 
+        something instead of just looking at trends. With some more digging and debating on what we wanted to compare it to, we decided to look at 
+        migration data. At first we wanted to look at California to Texas migration since that seems to be a consistent talking point in housing cost,
+        but ultimately decided to look at US data as a whole.
+
+      </h5>
+</div>
+  </div>
+    <div class="w3-center">
+      <div class="content">
+      <img src='images/real_estate.jpeg' width="750" height="500"></i>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Scott Armstrong, Brian Kenney, Alberto Garcia, Jadon Gonzaga</h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <a href= "https://github.com/sarmstrong9/Group_Project_Real_Estate" title= "Github Repo"><i class="fa fa-github w3-hover-opacity" style="font-size:36px"></i>Github Repo</a>
+ </div>
+ <p>Template by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+</script>
+
+</body>
+</html>

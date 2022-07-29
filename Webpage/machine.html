@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Predictions</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+<link rel="icon" href="./images/house_icon.png">
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-blue w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-blue" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="./index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
+    <a href="./process.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Setup/Tools</a>
+    <a href="./tableau.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Analyzing</a>
+    <a href="./r.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Testing</a>
+    <a href="./machine.html" class="w3-bar-item w3-button w3-padding-large w3-white">Predictions</a>
+    <a href="./summary.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Summary</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="./process.html" class="w3-bar-item w3-button w3-padding-large">Setup/Tools</a>
+    <a href="./tableau.html" class="w3-bar-item w3-button w3-padding-large">Analyzing</a>
+    <a href="./r.html" class="w3-bar-item w3-button w3-padding-large">Testing</a>
+    <a href="./machine.html" class="w3-bar-item w3-button w3-padding-large">Predictions</a>
+    <a href="./summary.html" class="w3-bar-item w3-button w3-padding-large">Summary</a>
+  </div>
+</div>
+
+
+<!-- Header -->
+<header class="w3-container w3-blue w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">Predictions</h1>
+</header>
+
+<!--Topic Header-->
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+  <h1>Setup</h1>
+</div>
+</div>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-center">
+      <h5 class="w3-padding-32">After cleaning our data in pandas the dataframes were exported to SQL.</h5>
+
+      <p class="w3-text-grey">Through SQL and inner join was applied based on year and state in order to fully merge our datasets.
+        This data was then fit into a linear regression model which provided use with a model coefficient of 0.11 and a 209366  model intercept. </p>
+    </div>
+  </div>
+</div>
+
+<!--Topic Header-->
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+  <h1>Graphs</h1>
+</div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird w3-center">
+      <img src="./images/Linear_Regression_Graph.png" width="500" height="500">
+      <img src="./images/Model_coef.png">
+    </div>
+
+    <div class="w3-third">
+      <h5 class="w3-padding-32">The model coefficient of 0.11 shows that migration does not have a positive correlation on home prices. However, this
+        small of a coefficient indicates that there is something else influencing rising home prices much more than migration.
+      </h5>
+
+      <p class="w3-text-grey"></p>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Scott Armstrong, Brian Kenney, Alberto Garcia, Jadon Gonzaga</h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+    <div class="w3-xlarge w3-padding-32">
+      <a href= "https://github.com/sarmstrong9/Group_Project_Real_Estate" title= "Github Repo"><i class="fa fa-github w3-hover-opacity" style="font-size:36px"></i>Github Repo</a>
+   </div>
+   <p>Template by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+</script>
+
+</body>
+</html>
